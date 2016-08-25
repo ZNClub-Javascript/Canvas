@@ -5,16 +5,16 @@ var context = a_canvas.getContext("2d");
 // Draw the face
 context.fillStyle = "yellow";
 context.beginPath();
-context.arc(95, 85, 40, 0, 2*Math.PI);
+context.arc(95, 85, 50, 0, 2*Math.PI);
 context.closePath();
 context.fill();
 
 //border
-context.lineWidth =2 ;
+context.lineWidth =1 ;
 context.stroke();
 
 //inner colours to differentiate from yellow
-context.fillStyle = "blue";
+context.fillStyle = "red";
 
 // Draw the left eye
 context.beginPath();
@@ -34,6 +34,53 @@ context.arc(95, 90, 26, Math.PI, 2*Math.PI, true);
 context.closePath();
 context.fill();
 
-// Write "Hello, World!"
+// Write "Hello, Canvas!"
 context.font = "30px Garamond";
-context.fillText("Hello, World!",15,175);
+context.fillText("ZNevzz",55,175);
+
+/*
+
+
+var tx=95;
+var ty=35;
+
+var lx=45;
+var ly=85;
+
+var bx=95;
+var by=135;
+
+var rx=145;
+var ry=85;
+
+
+
+//right side
+context.beginPath();
+context.arc(145, 85, 3, 0, 2*Math.PI);
+context.closePath();
+context.fill();
+context.fillText("h(0)",145+5,85);
+
+//top side
+context.beginPath();
+context.arc(95, 135-2*50, 3, 0, 2*Math.PI);
+context.closePath();
+context.fill();
+context.fillText("h(1)",95,);
+
+//left side
+context.beginPath();
+context.arc(95, 135, 3, 0, 2*Math.PI);
+context.closePath();
+context.fill();
+context.fillText("h(2)",145+5,85);
+
+//bottom side
+context.beginPath();
+context.arc(145, 85, 3, 0, 2*Math.PI);
+context.closePath();
+context.fill();
+context.fillText("h(3)",145+5,85);
+
+*/
